@@ -14,7 +14,7 @@ print(vList)
 for i in range(n):
     for j in range(0,n-i-1):
         if int(vList[j]) > int(vList[j+1]):
-            vList[j], vList[j+1] = vList[j+1], vList[j]
+              vList[j], vList[j+1] = vList[j+1], vList[j]
 
 # Output sorted
 print(vList)
