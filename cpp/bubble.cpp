@@ -3,7 +3,8 @@
 
 using namespace std;
 
-// Be aware this code requires at least std11!
+// Be aware this code requires at least C++11! 
+// On *NIX based systtems use flag -std=c++11 or c++17
 
 int main(){
 	int n;

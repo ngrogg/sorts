@@ -2,6 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 
 \title{Sorting Algorithms}
 \author{Nicholas Grogg}
@@ -11,6 +13,26 @@
 \maketitle
 
 \section{Bubble Sort}
+\begin{algorithm}
+	\caption{Bubble Sort Unoptomized}
+\begin{algorithmic}
+	\REQUIRE $x[n]$ unsorted
+	\ENSURE $x[n]$ sorted
+	\STATE $x[n]$ array of n size
+	\FOR{$i = 0$ to $i = n - 1$}
+	\STATE $x[i] \leftarrow$ input
+	\ENDFOR
+	\FOR{$i = 0$ to $i = n - 2$}
+	\FOR{$j = 0$ to $j = n - 1$}
+	\IF{$x[j] > x[j+1]$}
+	\STATE temp $\leftarrow x[j + 1]$ 
+	\STATE $x[j+1] \leftarrow x[j]$
+	\STATE $x[j] \leftarrow$ temp
+	\ENDIF
+	\ENDFOR
+	\ENDFOR
+\end{algorithmic}
+\end{algorithm}
 \noindent
 \section{Merge Sort}
 \section{Shell Sort}
